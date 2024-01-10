@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>宣纸制作视频欣赏</title>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="zhanshi.qlv"></script>
+    <script type="text/javascript">
+      function hello1(){
+    	  $("video").trigger("play");
+      }
+      function hello2(){
+    	  $("video").trigger("pause");
+      }
+      function hello3(){
+    	  $("video").prop("currentTime",78);
+      }
+      function hello4(){
+    	  var muted = $("video").prop("muted");
+    	  $("video").prop("muted",!muted);
+      }
+    </script>
+  </head>
+  <body>
+    
+    <input type="button" value="播放" onclick="hello1()" />
+    <input type="button" value="暂停" onclick="hello2()" />
+    <input type="button" value="设置进度" onclick="hello3()" />
+    <input type="button" value="静音" onclick="hello4()" />
+    
+    <br/><br/>
+    
+    <video id="vo" width="700" controls src="zhanshi.qlv"></video>
+    
+  </body>
+</html>
