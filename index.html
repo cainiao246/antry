@@ -3,10 +3,21 @@
 <head>
   <title>宣纸制作视频欣赏</title>
   <style>
-    iframe {
-      position: fixed; 
+    body, html {
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+    }
+    
+    #video-container {
+      position: fixed;
       top: 0;
       left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    
+    #video-frame {
       width: 100%;
       height: 100%;
       border: none;
@@ -14,6 +25,9 @@
   </style>
 </head>
 <body>
-  <iframe src="//player.bilibili.com/player.html?aid=271259830&bvid=BV1Vc411N7AJ&cid=1133903385&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+  <div id="video-container">
+    <iframe id="video-frame" src="//player.bilibili.com/player.html?aid=271259830&bvid=BV1Vc411N7AJ&cid=1133903385&p=1" allowfullscreen="true"></iframe>
+  </div>
+
 </body>
 </html>
